@@ -8,13 +8,18 @@ titles:
 key: page-about
 ---
 
-A fresh bloger. :+1:
+这是一个作业本，到处找到的菜谱，自己做一遍才知道好不好吃:+1:
+
+顺便精简一下语言，方便以后再做
+
+争取每周能更新一到两个菜吧，欢迎长期关注
+
+感谢各个菜谱原作者的分享，我会把原链接放在每个菜谱的最后面
 
 Love cooking:meat_on_bone:, bartender:cocktail: and boardgames:game_die:
 
-Studying Modern Java Development
-Spring Boot
-
 {% highlight java %}
-  System.out.println("hello, world")
+
+Menchi.kitchen.cook("meal");
+
 {% endhighlight %}
