@@ -1,14 +1,14 @@
 ---
 layout: post
 title: 糖醋排骨
-tags: 菜谱
+tags: 糖醋 排骨
 category: menu
 picture_frame: shadow
 ---
 
 ## 原料
 
-排骨1斤，姜片，料酒，米醋，酱油，糖，<!--more-->
+排骨1斤，姜片，料酒，米醋，酱油，糖<!--more-->
 
 ## 做法
 

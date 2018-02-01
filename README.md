@@ -1,5 +1,5 @@
-# menchi.xyz
+# cooking.menchi.xyz
 
-Menchi's personal Blog
+Menchi's personal cooking guide
 
-[menchi.xyz](http://menchi.xyz)
+[cooking.menchi.xyz](http://cooking.menchi.xyz)
