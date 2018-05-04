@@ -11,6 +11,7 @@
 #    |  |  \   --. /  .'.  \  |  |
 #    `--'   `----''--'   '--' `--'
 
+text_color_theme: dark #eg: default | dark | forest | ocean | chocolate | orange
 ## Base settings ##
 url: http://cooking.menchi.xyz
 baseurl: /
@@ -27,8 +28,8 @@ nav_lists:
     url: /about.html
 
 paths:
-  base: http://menchi.xyz
-  home: /
+  base: /
+  home: http://menchi.xyz/
   all: /all.html
   rss: /feed.xml
 
@@ -38,7 +39,7 @@ paths:
 
 ## Language & timezone ##
 lang: en #the language of your site, eg: en(English), zh(简体中文), zh-Hans(简体中文), zh-Hant(繁體中文)
-timezone: America/New_York #see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
+timezone: America/Los_Angeles #see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
 
 ## Author & social ##
 author:
@@ -50,7 +51,7 @@ author:
   # googleplus:  #your Google+ username
   # weibo:  #your Weibo username
   # douban:  #your Douban username
-  linkedin:  mengqi-guo-043411129
+  linkedin:  mengqi-guo
   instagram: menchi1024
 
 ## Comment system (Disqus) ##
@@ -68,13 +69,13 @@ gitalk:
     # - owner
 
 ## Google Analytics ##
-# ga_tracking_id:  #Google analytics id for the site
+ga_tracking_id: UA-118681910-1
 
 ## Reading quantity (LeanCloud) ##
 leancloud:
-  # app_id:  #LeanCloud App id
-  # app_key:  #LeanCloud App key
-  # app_class:  #LeanCloud App class
+  app_id: W7FTkOvrqjwwaaq0PzP7JULG-MdYXbMMI
+  app_key: cjRHQMkyj8wlN3cliN7nGB7T
+  app_class: kitchenCounter
 
 # mathjax: true
 
