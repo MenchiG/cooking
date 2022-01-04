@@ -1,26 +1,23 @@
-{%- if site.leancloud.app_id and site.leancloud.app_key and site.leancloud.app_class and jekyll.environment != "development" -%}
+{%- if site.kevin.app_url and site.kevin.app_key and jekyll.environment != "development" -%}
 {%- include snippets/get-sources.html -%}
 {%- assign _sources = __return -%}
 <script>
-  window.Lazyload.js(['{{ _sources.jquery }}', '{{ _sources.leancloud_js_sdk }}'], function() {
-    AV.init({
-      appId: '{{ site.leancloud.app_id }}',
-      appKey: '{{ site.leancloud.app_key }}'
-    });
-    $(".article-view").each(function() {
-      var curId = this.id;
-      var query = new AV.Query('{{ site.leancloud.app_class }}');
-      query.equalTo('key', curId.substr(9));
-      query.first().then(function(result) {
-        if (result) {
-          $('#' + curId).text(result.attributes.views);
-        }
-      }, function(error) {
-        if (error) {
-          throw error;
-        }
-      });
-    });
-  });
+window.Lazyload.js(['{{ _sources.jquery }}',], function() {
+ const url = '{{ site.kevin.app_url }}/check?token={{ site.kevin.app_key }}&hash=';
+ document.querySelectorAll("article .m-article-data .other-wrapper .view-wrapper .article-view").forEach(post => {
+ console.log(post.id)
+   $.ajax({
+     url: url+post.id,
+     crossDomain: true,
+     type: "GET",
+     success: function(res){
+         post.textContent = res;
+     },
+     error: function(error){
+         console.log("error")
+     }
+   })
+ });
+});
 </script>
 {%- endif -%}
