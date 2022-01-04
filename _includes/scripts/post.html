@@ -136,7 +136,6 @@
   });
 
   {%- if page.key and site.kevin.app_url and site.kevin.app_key and jekyll.environment != "development" -%}
-  
   window.Lazyload.js(['{{ _sources.jquery }}',], function() {
     const url = '{{ site.kevin.app_url }}/increase?token={{ site.kevin.app_key }}&hash=';
     var post = document.querySelector("article .m-article-data .other-wrapper .view-wrapper .article-view")

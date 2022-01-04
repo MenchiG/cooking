@@ -1,6 +1,7 @@
 {%- if site.kevin.app_url and site.kevin.app_key and jekyll.environment != "development" -%}
 {%- include snippets/get-sources.html -%}
 {%- assign _sources = __return -%}
+
 <script>
 window.Lazyload.js(['{{ _sources.jquery }}',], function() {
  const url = '{{ site.kevin.app_url }}/check?token={{ site.kevin.app_key }}&hash=';
