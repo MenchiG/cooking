@@ -71,11 +71,10 @@ gitalk:
 ## Google Analytics ##
 ga_tracking_id: UA-118681910-1
 
-## Reading quantity (LeanCloud) ##
-leancloud:
-  app_id: W7FTkOvrqjwwaaq0PzP7JULG-MdYXbMMI
-  app_key: cjRHQMkyj8wlN3cliN7nGB7T
-  app_class: kitchenCounter
+## Reading quantity (kevin) ##
+kevin:
+  app_url: http://185.28.23.166:5000
+  app_key: 9268de33-e36f-4bc2-a430-c54231d85e10
 
 # mathjax: true
 
